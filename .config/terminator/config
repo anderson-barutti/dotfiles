@@ -7,15 +7,16 @@
 [keybindings]
 [profiles]
   [[default]]
+    scrollbar_position = hidden
     use_system_font = False
     visible_bell = True
-    background_darkness = 0.9
+    background_darkness = 0.68
     audible_bell = True
     background_type = transparent
-    scrollbar_position = hidden
+    background_image = None
     cursor_color = "#ffffff"
     cursor_shape = ibeam
-    font = Monospace Bold 10
+    font = Monospace 10
     scrollback_infinite = True
 [layouts]
   [[default]]
