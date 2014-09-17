@@ -46,7 +46,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Command line customizations
 alias ack='ack-grep'
-
+alias please='sudo'
+alias stationfy='cd ~/projects/stationfy/'
 # Drupal and Drush aliases. https://github.com/nuvoleweb/drush_alias
 alias drurs='drush upwd $(drush uinf 1 | grep -e "User name" | grep -oe "[a-zA-Z0-9]\+\s\+$" | grep -e "[a-zA-Z0-9]\+") --password="$(date +%Y%m%d)"'
 alias drsp='cp sites/default/default.settings.php sites/default/settings.php'
@@ -62,3 +63,9 @@ alias drfu='drush -y features-update'
 alias drfr='drush -y features-revert'
 alias drfra='drush -y features-revert-all'
 alias dr='drush'
+
+export NVM_DIR="/home/andersonbarutti/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#source ~/.rvm/scripts/rvm
